@@ -36,15 +36,15 @@ export default function Home() {
             className="text-center text-sm md:text-base text-muted-foreground mb-6 tracking-wide"
             data-testid="text-tagline"
           >
-            TuneEng: Tune in Fluency, Tune out Hesitancy.
+            TuneEng LSRW: Tune in Fluency, Tune out Hesitancy.
           </motion.p>
 
           {/* Main Title */}
           <motion.div variants={fadeInUp} className="mb-8">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center leading-tight text-foreground">
-              <span className="block mb-2" data-testid="text-hero-title-line1">Master English Communication with</span>
+              <span className="block mb-2" data-testid="text-hero-title-line1">Master LSRW Skills for</span>
               <span className="block bg-gradient-to-r from-primary via-[hsl(215,85%,65%)] to-[hsl(215,85%,75%)] bg-clip-text text-transparent" data-testid="text-hero-title-line2">
-                AI Precision
+                Corporate Success
               </span>
             </h1>
           </motion.div>
@@ -55,35 +55,27 @@ export default function Home() {
             className="text-center text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto mb-12"
             data-testid="text-hero-subtitle"
           >
-            Learn Listening, Reading, and Writing — guided by AI, all personalized by precision.
+            AI-powered platform for college students to master Listening, Speaking, Reading, and Writing skills for corporate communication and placement readiness.
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <motion.div 
             variants={fadeInUp}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20"
+            className="flex items-center justify-center mb-20"
           >
             <Button 
               size="lg"
-              className="w-full sm:w-auto px-8 py-6 text-lg rounded-2xl transition-all duration-300 hover:scale-105 font-semibold"
+              className="px-8 py-6 text-lg rounded-2xl transition-all duration-300 hover:scale-105 font-semibold"
               style={{
                 background: 'linear-gradient(135deg, #A7C7F9 0%, #DCEBFF 100%)',
                 color: '#1e293b',
                 boxShadow: '0 4px 14px 0 rgba(167, 199, 249, 0.4), 0 0 20px rgba(167, 199, 249, 0.3)'
               }}
               data-testid="button-preregister-hero"
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSf8D0ub13V_9WvWuQQ-4OJTmDOA-zAq2Ik_8xWZQwuWyIhJow/viewform?usp=dialog', '_blank')}
             >
               <Sparkles className="mr-2 h-5 w-5" />
               Pre-Register Now
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              className="w-full sm:w-auto px-8 py-6 text-lg rounded-2xl backdrop-blur-sm bg-background/60 border-2 hover:bg-background/80"
-              data-testid="button-watch-demo"
-            >
-              Watch Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
 
@@ -95,26 +87,26 @@ export default function Home() {
             {[
               {
                 icon: Headphones,
-                title: "Listen & Learn",
-                description: "AI-guided pronunciation and comprehension.",
+                title: "Listening Mastery",
+                description: "1,000+ curated exercises with voice-guided prompts.",
                 testId: "card-feature-listen"
               },
               {
                 icon: Mic,
-                title: "Speak Confidently",
-                description: "Real-time fluency and accent training.",
+                title: "Speaking Excellence",
+                description: "Real-time fluency training with AI feedback.",
                 testId: "card-feature-speak1"
               },
               {
                 icon: MessageCircle,
-                title: "Speak Confidently",
-                description: "Conversational AI for daily practice.",
+                title: "Reading Proficiency",
+                description: "500+ guided test sets with model answers.",
                 testId: "card-feature-speak2"
               },
               {
                 icon: FileEdit,
-                title: "Write Better",
-                description: "Grammar correction and expression improvement.",
+                title: "Writing Skills",
+                description: "Adaptive practice modules for professional communication.",
                 testId: "card-feature-write"
               }
             ].map((feature, index) => (
@@ -172,7 +164,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             data-testid="text-bold-description"
           >
-            TuneEng is built by educators and engineers who understand how difficult fluency can be. With voice analysis and precision AI feedback, TuneEng helps you communicate with confidence, anywhere.
+            TuneEng LSRW is designed specifically for college students preparing for corporate careers. With over 1,000 curated exercises, 500 guided test sets, and AI-driven feedback, we bridge the gap between academic learning and professional communication excellence.
           </motion.p>
 
           {/* Laptop Illustration with Audio Waves */}
@@ -275,20 +267,20 @@ export default function Home() {
             {[
               {
                 icon: CheckCircle,
-                title: "AI-powered English skill map",
-                description: "See your strengths and weaknesses in real time.",
+                title: "Adaptive Practice Modules",
+                description: "Personalized learning paths with data-driven insights.",
                 testId: "card-early-skillmap"
               },
               {
                 icon: Gift,
-                title: "Daily lesson plans",
-                description: "Interactive lessons that fit your schedule.",
+                title: "Daily Challenges & Peer Review",
+                description: "Interactive exercises with expert sessions and progress tracking.",
                 testId: "card-early-lessons"
               },
               {
                 icon: Bell,
-                title: "Community access",
-                description: "Join learners and AI coaches from around the world.",
+                title: "Placement Readiness",
+                description: "Real-world exercises designed for corporate communication success.",
                 testId: "card-early-community"
               }
             ].map((item, index) => (
@@ -334,7 +326,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             data-testid="text-final-cta-subtitle"
           >
-            Be the first to experience /<br className="sm:hidden" /> the future of English fluency.
+            Join thousands of college students preparing for /<br className="sm:hidden" /> corporate success with TuneEng LSRW.
           </motion.p>
 
           <motion.div
@@ -352,6 +344,7 @@ export default function Home() {
                 boxShadow: '0 4px 14px 0 rgba(167, 199, 249, 0.4), 0 0 20px rgba(167, 199, 249, 0.3)'
               }}
               data-testid="button-preregister-final"
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSf8D0ub13V_9WvWuQQ-4OJTmDOA-zAq2Ik_8xWZQwuWyIhJow/viewform?usp=dialog', '_blank')}
             >
               Pre-Register Free
               <ArrowRight className="ml-2 h-5 w-5" />
