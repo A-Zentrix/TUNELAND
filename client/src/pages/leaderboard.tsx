@@ -5,11 +5,11 @@ import { Link } from "wouter";
 
 export default function Leaderboard() {
   const leaderboardData = [
-    { rank: 1, name: "Sophia Bennett", points: 1250, badges: 5 },
-    { rank: 2, name: "Ethan Carter", points: 1180, badges: 4 },
-    { rank: 3, name: "Olivia Davis", points: 1120, badges: 3 },
-    { rank: 4, name: "Noah Evans", points: 1050, badges: 2 },
-    { rank: 5, name: "Ava Foster", points: 980, badges: 1 },
+    { rank: 1, name: "Hari Prasath", points: 1250, badges: 5 },
+    { rank: 2, name: "Lavanya Mohan", points: 1180, badges: 4 },
+    { rank: 3, name: "Sanjay Venkatesh", points: 1120, badges: 3 },
+    { rank: 4, name: "Revathi Narayanan", points: 1050, badges: 2 },
+    { rank: 5, name: "Manoj Kiran", points: 980, badges: 1 },
   ];
 
   return (
