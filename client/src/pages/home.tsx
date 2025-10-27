@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Headphones, Mic, MessageCircle, FileEdit, CheckCircle, Gift, Bell, ArrowRight, Sparkles } from "lucide-react";
+import { Headphones, Mic, MessageCircle, FileEdit, CheckCircle, Gift, Bell, ArrowRight, Sparkles, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "wouter";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -58,14 +59,14 @@ export default function Home() {
             AI-powered platform for college students to master Listening, Speaking, Reading, and Writing skills for corporate communication and placement readiness.
           </motion.p>
 
-          {/* CTA Button */}
+          {/* CTA Buttons */}
           <motion.div 
             variants={fadeInUp}
-            className="flex items-center justify-center mb-20"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20"
           >
             <Button 
               size="lg"
-              className="px-8 py-6 text-lg rounded-2xl transition-all duration-300 hover:scale-105 font-semibold"
+              className="w-full sm:w-auto px-8 py-6 text-lg rounded-2xl transition-all duration-300 hover:scale-105 font-semibold"
               style={{
                 background: 'linear-gradient(135deg, #A7C7F9 0%, #DCEBFF 100%)',
                 color: '#1e293b',
@@ -77,6 +78,17 @@ export default function Home() {
               <Sparkles className="mr-2 h-5 w-5" />
               Pre-Register Now
             </Button>
+            <Link href="/demo">
+              <Button 
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto px-8 py-6 text-lg rounded-2xl backdrop-blur-sm bg-background/60 border-2 hover:bg-background/80"
+                data-testid="button-watch-demo"
+              >
+                <Play className="mr-2 h-5 w-5" />
+                Watch Demo
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Feature Cards */}
